@@ -10,7 +10,7 @@
     android:orientation="vertical">
 
     <TextView
-        android:text="My Nanodegree Apps!"
+        android:text="@string/activity_title"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -19,38 +19,37 @@
     <Button
         style="@style/button_styles"
         android:id="@+id/button_spotify"
-        android:text="Spotify Streamer"
+        android:text="@string/button_spotify"
         android:layout_below="@+id/textView"
         android:onClick="sendMessage" />
     <Button
         style="@style/button_styles"
         android:id="@+id/button_scores"
-        android:text="Scores App"
+        android:text="@string/button_scores"
         android:layout_below="@+id/textView"
         android:onClick="sendMessage" />
     <Button
         style="@style/button_styles"
         android:id="@+id/button_library"
-        android:text="Library App"
+        android:text="@string/button_library"
         android:layout_below="@+id/textView"
         android:onClick="sendMessage" />
     <Button
         style="@style/button_styles"
         android:id="@+id/button_bigger"
-        android:text="Build It Bigger"
+        android:text="@string/button_bigger"
         android:layout_below="@+id/textView"
         android:onClick="sendMessage" />
     <Button
         style="@style/button_styles"
         android:id="@+id/button_reader"
-        android:text="XYZ Reader"
+        android:text="@string/button_reader"
         android:layout_below="@+id/textView"
         android:onClick="sendMessage" />
     <Button
         style="@style/button_styles"
         android:id="@+id/button_capstone"
-        android:text="Capstone: My Own App"
+        android:text="@string/button_capstone"
         android:layout_below="@+id/textView"
         android:onClick="sendMessage" />
-
 </LinearLayout>
