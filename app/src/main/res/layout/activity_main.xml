@@ -21,35 +21,35 @@
         android:id="@+id/button_spotify"
         android:text="@string/button_spotify"
         android:layout_below="@+id/textView"
-        android:onClick="sendMessage" />
+        android:onClick="showToast" />
     <Button
         style="@style/button_styles"
         android:id="@+id/button_scores"
         android:text="@string/button_scores"
         android:layout_below="@+id/textView"
-        android:onClick="sendMessage" />
+        android:onClick="showToast" />
     <Button
         style="@style/button_styles"
         android:id="@+id/button_library"
         android:text="@string/button_library"
         android:layout_below="@+id/textView"
-        android:onClick="sendMessage" />
+        android:onClick="showToast" />
     <Button
         style="@style/button_styles"
         android:id="@+id/button_bigger"
         android:text="@string/button_bigger"
         android:layout_below="@+id/textView"
-        android:onClick="sendMessage" />
+        android:onClick="showToast" />
     <Button
         style="@style/button_styles"
         android:id="@+id/button_reader"
         android:text="@string/button_reader"
         android:layout_below="@+id/textView"
-        android:onClick="sendMessage" />
+        android:onClick="showToast" />
     <Button
         style="@style/button_styles"
         android:id="@+id/button_capstone"
         android:text="@string/button_capstone"
         android:layout_below="@+id/textView"
-        android:onClick="sendMessage" />
+        android:onClick="showToast" />
 </LinearLayout>

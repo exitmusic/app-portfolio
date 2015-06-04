@@ -10,35 +10,39 @@ import android.widget.Toast;
 
 
 public class MainActivity extends ActionBarActivity {
-    public void sendMessage(View view) {
+    private Toast appToast;
+
+    public void showToast(View view) {
         Context context = getApplicationContext();
         CharSequence text = "";
         int duration = Toast.LENGTH_SHORT;
 
         switch (view.getId()) {
             case R.id.button_spotify:
-                text = "This button will launch my spotify app!";
+                text = "This button will launch my Spotify App!";
                 break;
             case R.id.button_scores:
-                text = "This button will launch my scores app!";
+                text = "This button will launch my Scores App!";
                 break;
             case R.id.button_library:
-                text = "This button will launch my library app!";
+                text = "This button will launch my Library App!";
                 break;
             case R.id.button_bigger:
-                text = "This button will launch my build it bigger app!";
+                text = "This button will launch my Build It Bigger App!";
                 break;
             case R.id.button_reader:
-                text = "This button will launch my xyz reader app!";
+                text = "This button will launch my XYZ Reader App!";
                 break;
             case R.id.button_capstone:
-                text = "This button will launch my capstone app!";
+                text = "This button will launch my Capstone App!";
                 break;
         }
 
-
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
+        if (appToast != null) {
+            appToast.cancel();
+        }
+        appToast = Toast.makeText(context, text, duration);
+        appToast.show();
     }
 
     @Override
